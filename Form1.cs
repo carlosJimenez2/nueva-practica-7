@@ -25,6 +25,39 @@ namespace Arreglos
 
         private void button2_Click(object sender, EventArgs e)
         {
+            List<List<string>> ListaNombres;
+            ListaNombres = new List<List<string>>();
+
+           
+
+            List<string> NombresList;
+            NombresList = new List<string>();
+
+            List<string> ApellidoPaternoList;
+            ApellidoPaternoList = new List<string>();
+
+            List<string> ApellidoMaternoList;
+            ApellidoMaternoList = new List<string>();
+
+
+            NombresList.Add("Alejandro");
+            NombresList.Add("Erick");
+            NombresList.Add("Carlos");
+
+            ApellidoPaternoList.Add("Arzate");
+            ApellidoPaternoList.Add("Barcenas");
+            ApellidoPaternoList.Add("Jimenez");
+
+            ApellidoMaternoList.Add("Gomez");
+            ApellidoMaternoList.Add("___");
+            ApellidoMaternoList.Add("Arellano");
+
+
+            ListaNombres.Add(ApellidoMaternoList);
+            ListaNombres.Add(ApellidoPaternoList);
+            ListaNombres.Add(NombresList);
+
+
             string[,] NombreCompletoArray = new string[7, 4] { { "ARZATE", "GOMEZ", "JESUS ALEJANDRO", "314168126" }, { "BARCENAS", "MARTINEZ", "ERICK IVAN", "417092331" }, { "LAGUNA", "LOPEZ", "LUIS ANTONIO", "313067136" }, { "MARTINEZ", "ANDRADE", "SEBASTIAN ALDAIR", "313041578" }, { "SANCHEZ", "RUIZ", "LUIS ARMANDO", "305303965" }, { "SOSA", "CORONA", "MILTON OSMAR", "314308067" }, { "Uribe", "Serralde", "Armando", "314104326" } };
 
             string[][] NombreCompletoJArray = new string[7][];
